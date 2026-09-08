@@ -23,12 +23,6 @@ Run:  python generate_data.py
 """
 
 
-## WHAT ARE WE GOING TO DO NEXT:
-## cerate the match_transactions and detect_discrepancies ==> check with claude what and how to do this.
-## this has been mentioned as a tool. So Check out what type of tool this is. Either a tool for the agent or a function that just does this.
-## I guess the detect_discrepancies is called when match_transactions fail. so in turn it will probably call the ai agent to run the RAg and get a proper diagnosis.
-
-
 import csv
 import json
 import random

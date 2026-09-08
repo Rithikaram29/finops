@@ -1,7 +1,7 @@
 """
 Unit tests for tools.py -- stdlib only, no pytest needed.
 
-    cd finops_starter && python3 -m unittest discover tests -v
+    python3 -m unittest discover tests -v
 
 Two layers:
   * unit tests   -- hand-built rows, one discrepancy type each
