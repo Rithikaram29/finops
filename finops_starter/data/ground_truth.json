@@ -1,0 +1,134 @@
+[
+  {
+    "txn_id": "TXN00039",
+    "discrepancy_type": "missing_in_settlement",
+    "expected_resolution": "Captured transaction has no matching settlement. Flag as pending settlement; escalate if unsettled beyond 2 business days.",
+    "policy_ref": "05_unsettled_transactions.md"
+  },
+  {
+    "txn_id": "TXN00150",
+    "discrepancy_type": "missing_in_settlement",
+    "expected_resolution": "Captured transaction has no matching settlement. Flag as pending settlement; escalate if unsettled beyond 2 business days.",
+    "policy_ref": "05_unsettled_transactions.md"
+  },
+  {
+    "txn_id": "TXN00265",
+    "discrepancy_type": "missing_in_settlement",
+    "expected_resolution": "Captured transaction has no matching settlement. Flag as pending settlement; escalate if unsettled beyond 2 business days.",
+    "policy_ref": "05_unsettled_transactions.md"
+  },
+  {
+    "txn_id": "TXN00162",
+    "discrepancy_type": "missing_in_settlement",
+    "expected_resolution": "Captured transaction has no matching settlement. Flag as pending settlement; escalate if unsettled beyond 2 business days.",
+    "policy_ref": "05_unsettled_transactions.md"
+  },
+  {
+    "txn_id": "TXN00145",
+    "discrepancy_type": "missing_in_settlement",
+    "expected_resolution": "Captured transaction has no matching settlement. Flag as pending settlement; escalate if unsettled beyond 2 business days.",
+    "policy_ref": "05_unsettled_transactions.md"
+  },
+  {
+    "txn_id": "TXN00049",
+    "discrepancy_type": "duplicate_settlement",
+    "expected_resolution": "Two settlements exist for one transaction. Retain the earliest settlement, reverse the duplicate, and adjust the ledger.",
+    "policy_ref": "06_duplicate_settlements.md"
+  },
+  {
+    "txn_id": "TXN00092",
+    "discrepancy_type": "duplicate_settlement",
+    "expected_resolution": "Two settlements exist for one transaction. Retain the earliest settlement, reverse the duplicate, and adjust the ledger.",
+    "policy_ref": "06_duplicate_settlements.md"
+  },
+  {
+    "txn_id": "TXN00007",
+    "discrepancy_type": "duplicate_settlement",
+    "expected_resolution": "Two settlements exist for one transaction. Retain the earliest settlement, reverse the duplicate, and adjust the ledger.",
+    "policy_ref": "06_duplicate_settlements.md"
+  },
+  {
+    "txn_id": "TXN00034",
+    "discrepancy_type": "duplicate_settlement",
+    "expected_resolution": "Two settlements exist for one transaction. Retain the earliest settlement, reverse the duplicate, and adjust the ledger.",
+    "policy_ref": "06_duplicate_settlements.md"
+  },
+  {
+    "txn_id": "TXN00189",
+    "discrepancy_type": "amount_mismatch",
+    "expected_resolution": "Settled amount differs from (amount - fee) by more than the tolerance and is not explained by fees or FX. Flag for manual review.",
+    "policy_ref": "02_amount_tolerances.md"
+  },
+  {
+    "txn_id": "TXN00180",
+    "discrepancy_type": "amount_mismatch",
+    "expected_resolution": "Settled amount differs from (amount - fee) by more than the tolerance and is not explained by fees or FX. Flag for manual review.",
+    "policy_ref": "02_amount_tolerances.md"
+  },
+  {
+    "txn_id": "TXN00080",
+    "discrepancy_type": "amount_mismatch",
+    "expected_resolution": "Settled amount differs from (amount - fee) by more than the tolerance and is not explained by fees or FX. Flag for manual review.",
+    "policy_ref": "02_amount_tolerances.md"
+  },
+  {
+    "txn_id": "TXN00051",
+    "discrepancy_type": "amount_mismatch",
+    "expected_resolution": "Settled amount differs from (amount - fee) by more than the tolerance and is not explained by fees or FX. Flag for manual review.",
+    "policy_ref": "02_amount_tolerances.md"
+  },
+  {
+    "txn_id": "TXN00109",
+    "discrepancy_type": "amount_mismatch",
+    "expected_resolution": "Settled amount differs from (amount - fee) by more than the tolerance and is not explained by fees or FX. Flag for manual review.",
+    "policy_ref": "02_amount_tolerances.md"
+  },
+  {
+    "txn_id": "TXN00056",
+    "discrepancy_type": "timing_difference",
+    "expected_resolution": "Settlement occurred beyond the acceptable T+2 window. Flag and record the delay reason; settlement within T+2 needs no action.",
+    "policy_ref": "07_settlement_timing.md"
+  },
+  {
+    "txn_id": "TXN00021",
+    "discrepancy_type": "timing_difference",
+    "expected_resolution": "Settlement occurred beyond the acceptable T+2 window. Flag and record the delay reason; settlement within T+2 needs no action.",
+    "policy_ref": "07_settlement_timing.md"
+  },
+  {
+    "txn_id": "TXN00053",
+    "discrepancy_type": "timing_difference",
+    "expected_resolution": "Settlement occurred beyond the acceptable T+2 window. Flag and record the delay reason; settlement within T+2 needs no action.",
+    "policy_ref": "07_settlement_timing.md"
+  },
+  {
+    "txn_id": "TXN00006",
+    "discrepancy_type": "timing_difference",
+    "expected_resolution": "Settlement occurred beyond the acceptable T+2 window. Flag and record the delay reason; settlement within T+2 needs no action.",
+    "policy_ref": "07_settlement_timing.md"
+  },
+  {
+    "txn_id": "TXN00128",
+    "discrepancy_type": "status_mismatch",
+    "expected_resolution": "Settlement is 'refunded' while the ledger shows 'captured'. Requires a linked refund record; if none exists, escalate.",
+    "policy_ref": "08_status_reconciliation.md"
+  },
+  {
+    "txn_id": "TXN00290",
+    "discrepancy_type": "status_mismatch",
+    "expected_resolution": "Settlement is 'refunded' while the ledger shows 'captured'. Requires a linked refund record; if none exists, escalate.",
+    "policy_ref": "08_status_reconciliation.md"
+  },
+  {
+    "txn_id": "TXN00124",
+    "discrepancy_type": "status_mismatch",
+    "expected_resolution": "Settlement is 'refunded' while the ledger shows 'captured'. Requires a linked refund record; if none exists, escalate.",
+    "policy_ref": "08_status_reconciliation.md"
+  },
+  {
+    "txn_id": "TXN00226",
+    "discrepancy_type": "status_mismatch",
+    "expected_resolution": "Settlement is 'refunded' while the ledger shows 'captured'. Requires a linked refund record; if none exists, escalate.",
+    "policy_ref": "08_status_reconciliation.md"
+  }
+]
